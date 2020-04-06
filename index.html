@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>simple-clock-timer</title>
+	<!-- Reference Moment.js Library -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
+	<!--Font Awesome Icon Link-->
+	<!-- <link rel="stylesheet" href="fonts/font-awesome/css/all.css" >
+	<script src="https://momentjs.com/downloads/moment.js" type="text/javascript"></script> -->
+	<!-- Reference JavaScript Source -->
+	<script src="app.js" type="text/javascript"></script> 
+	<!-- Reference CSS Library -->
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+    <div class="clock-input">
+        <input type="date" name="time-to" class="time-to" id="time-to" value="" onchange="calcTime(this.value)">
+    </div>
+    <div class="container">
+        <div class="clock-column">
+            <p class="clock-day clock-timer"></p>
+            <p class="clock-label">Days</p>
+        </div>
+    
+        <div class="clock-column">
+            <p class="clock-hours clock-timer"></p>
+            <p class="clock-label">Hours</p>
+        </div>
+    
+        <div class="clock-column">
+            <p class="clock-minutes clock-timer"></p>
+            <p class="clock-label">Minutes</p>
+        </div>
+    
+        <div class="clock-column">
+            <p class="clock-seconds clock-timer"></p>
+            <p class="clock-label">Seconds</p>
+        </div>
+    </div>
+
+</body>
+</html>
